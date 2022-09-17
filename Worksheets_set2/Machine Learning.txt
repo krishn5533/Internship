@@ -1,0 +1,68 @@
+Q1. Movie Recommendation systems are an example of:
+A: a) 2 Only(Clustering)
+
+Q2. Sentiment Analysis is an example of:
+A: d) 1, 2 and 4 (Regression,Classification,Reinforcement)
+
+Q3. Can decision trees be used for performing clustering?
+A: a) True
+
+Q4. Which of the following is the most appropriate strategy for data cleaning before performing clustering 
+analysis, given less than desirable number of data points:
+i) Capping and flooring of variables
+ii) Removal of outliers 
+A: a) 1 only
+
+Q5.  What is the minimum no. of variables/ features required to perform clustering? 
+A: b) 1
+
+Q6. For two runs of K-Mean clustering is it expected to get same clustering results?
+A: b) No
+
+Q7. Is it possible that Assignment of observations to clusters does not change between successive 
+iterations in K-Means?
+A: a) Yes
+
+Q8. Which of the following can act as possible termination conditions in K-Means?
+i) For a fixed number of iterations.
+ii) Assignment of observations to clusters does not change between iterations. Except for cases 
+witha bad local minimum.
+iii) Centroids do not change between successive iterations.
+iv) Terminate when RSS falls below a threshold. 
+A: d) All of the above
+
+Q9. Which of the following algorithms is most sensitive to outliers?
+
+A:a) K-means clustering algorithm
+
+Q10. How can Clustering (Unsupervised Learning) be used to improve the accuracy of Linear Regression 
+model (Supervised Learning):
+i) Creating different models for different cluster groups.
+ii) Creating an input feature for cluster ids as an ordinal variable.
+iii) Creating an input feature for cluster centroids as a continuous variable.
+iv) Creating an input feature for cluster size as a continuous variable.
+A: d) All of the above
+
+Q11. What could be the possible reason(s) for producing two different dendrograms using agglomerative 
+clustering algorithms for the same dataset?
+a) Proximity function used
+b) of data points used
+c) of variables used
+d) All of the above
+
+A: d) All of the above
+
+Q12. Is K sensitive to outliers?
+
+A: The K-means clustering algorithm is sensitive to outliers.This is due to the fact the mean statistically is sensitive to outliers. Since K-Means algorithm is about finding mean of clusters, the algorithm is influenced by outliers.
+A better alternative is the K-mediods clustering algorithm.A Mediod  is the most centrally located object in a cluster with minimum sum of distances to other points.
+
+Q13.Why is K means better?
+
+A: K means clustering algorithm is simpler than many other clustering algorithms, it's less expensive than other algorithms. It clusters large data sets in a short amount of time,this is because the time complexity of K Means is linear i.e. O(n). K means guarantees Convergence,K Means clustering is found to work well when the structure of the clusters is hyper spherical and specialises to clusters of different sizes and shapes. Varying densities of the data points doesn't affect K-means clustering algorithm.
+K means reduces space into smaller sub spaces that are disjoint, where other clustering algorithms can be applied, making it great for
+pre clustering. 
+
+Q14. Is K means a deterministic algorithm?
+A: In computer science, a deterministic algorithm, given a particular input, will always produce the same output, with the underlying machine always passing through the same sequence of states.
+K means clustering is based on a non deterministic algorithm, meaning that running it many times on same data could give different results. K-Means is non deterministic in nature due to the random selection of data points as initial centroids. It splits the data set into a fixed 'k' number of clusters. k number of centroids are picked and each centroid is set to arthmetic mean of the cluster to which it belongs. The algorithm selects data points belonging to dense regions, sufficiently separated in feature space as initial centroids.
